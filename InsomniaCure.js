@@ -1,0 +1,16 @@
+//https://codeforces.com/problemset/problem/148/A
+
+var k = parseInt(readline());
+var l = parseInt(readline());
+var m = parseInt(readline());
+var n = parseInt(readline());
+var d = parseInt(readline());
+var count = 0;
+
+for(var i = 1; i <= d; i++){
+   if((i%k != 0) && (i%l != 0) && (i%m != 0) && (i%n != 0)){
+    //console.log((i%k != 0) && (i%l != 0) && (i%m != 0) && (i%n != 0));
+       count ++;
+   }   
+}
+print(d - count);
